@@ -21,7 +21,7 @@ template.innerHTML = `
       </section>
     </header>
     <main>
-      <div class="description"></div>
+      <div><slot name="description" /></div>
       <div><u>technologies</u>: <span class="technologies"></span></div>
     </main>
   </section>
@@ -39,7 +39,6 @@ class DetailedCareerItem extends HTMLElement {
         this.shadowRoot.querySelector('.start-year').innerText = this.getAttribute('start-year');
         this.shadowRoot.querySelector('.end-month').innerText = this.getAttribute('end-month') || 'present';
         this.shadowRoot.querySelector('.end-year').innerText = this.getAttribute('end-year');
-        this.shadowRoot.querySelector('.description').innerText = this.getAttribute('description');
         this.shadowRoot.querySelector('.technologies').innerText = this.getAttribute('technologies');
     }
 }

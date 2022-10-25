@@ -1,7 +1,8 @@
 {
     "scripts": {
         "regular": "yarn parcel src/regular.html",
-        "detailed": "yarn parcel src/detailed.html"
+        "detailed": "yarn parcel src/detailed.html",
+        "consulting": "yarn parcel src/consulting.html"
     },
     "devDependencies": {
         "parcel": "^2.7.0",
