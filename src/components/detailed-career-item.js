@@ -16,7 +16,7 @@ template.innerHTML = `
       </section>
       <section>
         <strong>
-          <span class="start-month"></span> <span class="start-year"></span> - <span class="end-month"></span> <span class="end-year"></span>
+          <span class="start-month"></span> <span class="start-year"></span><span class="date-dash"></span><span class="end-month"></span> <span class="end-year"></span>
         </strong>
       </section>
     </header>
@@ -37,8 +37,9 @@ class DetailedCareerItem extends HTMLElement {
     this.shadowRoot.querySelector('.company').style.fontWeight = this.getAttribute('role-title') ? '800' : '500';
     this.shadowRoot.querySelector('.company').style.fontStyle = this.getAttribute('role-title') ? 'none' : 'italic';
     this.shadowRoot.querySelector('.role-title').innerText = this.getAttribute('role-title') ? " | " + this.getAttribute('role-title') : "";
-    this.shadowRoot.querySelector('.start-month').innerText = this.getAttribute('start-month');
+    this.shadowRoot.querySelector('.start-month').innerText = this.getAttribute('start-month') || '';
     this.shadowRoot.querySelector('.start-year').innerText = this.getAttribute('start-year');
+    this.shadowRoot.querySelector('.date-dash').innerText = this.getAttribute('start-month') && this.getAttribute('start-year') ? " - " : "";
     this.shadowRoot.querySelector('.end-month').innerText = this.getAttribute('end-month') || 'present';
     this.shadowRoot.querySelector('.end-year').innerText = this.getAttribute('end-year');
     this.shadowRoot.querySelector('.technologies').innerText = this.getAttribute('technologies') ? ': ' + this.getAttribute('technologies') : '';
