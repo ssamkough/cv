@@ -100,7 +100,7 @@ ul {
     padding: 0px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
 }
 
 li {
@@ -132,7 +132,6 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    gap: 6px;
 }
 
 #education {
