@@ -9,6 +9,7 @@ const experienceCollection = defineCollection({
     shouldHide: z.boolean().optional(),
     company_name: z.string(),
     role_name: z.string(),
+    website_url: z.string().optional(),
     time_worked: z.object({
       start: z.object({
         month: z.string(),
