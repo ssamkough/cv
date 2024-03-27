@@ -33,8 +33,15 @@ const experienceCollection = (await getCollection("experience"))
   <div class="container">
     <header>
       <h1>sammy samkough</h1>
-      <div class="links">
-        {LINKS.map(({ title, url }) => <a href={url}>{title}</a>)}
+      <div style="display: flex; gap: 8px">
+        {
+          LINKS.map(({ title, url }, index) => (
+            <>
+              <a href={url}>{title}</a>
+              {index < LINKS.length - 1 ? " | " : ""}
+            </>
+          ))
+        }
       </div>
     </header>
     <hr />
@@ -115,9 +122,5 @@ const experienceCollection = (await getCollection("experience"))
   }
   h2 {
     font-size: 1.2em;
-  }
-  .links {
-    display: flex;
-    gap: 12px;
   }
 </style>
