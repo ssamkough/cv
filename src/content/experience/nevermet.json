@@ -2,6 +2,7 @@
   "order": 2,
   "company_name": "nevermet",
   "role_name": "software engineer",
+  "website_url": "https://www.nevermet.io",
   "time_worked": {
     "start": {
       "month": "october",

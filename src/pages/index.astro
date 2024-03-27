@@ -64,14 +64,27 @@ const experienceCollection = (await getCollection("experience"))
                 company_name,
                 role_name,
                 time_worked,
+                website_url,
                 description,
                 technologies,
               }) => (
                 <article>
-                  <header style="display: flex; justify-content: space-between; gap: 12px">
-                    <span>
-                      <strong>{company_name}</strong> |{" "}
-                      <strong>{role_name}</strong>
+                  <header style="display: flex; justify-content: space-between; gap: 4px; flex-wrap: wrap;">
+                    <span style="display: flex; gap: 4px;">
+                      <strong>
+                        {website_url ? (
+                          <a
+                            href={website_url}
+                            target="_blank"
+                            style="color: black"
+                          >
+                            {company_name}
+                          </a>
+                        ) : (
+                          company_name
+                        )}
+                      </strong>
+                      | <strong>{role_name}</strong>
                     </span>
                     <address>
                       <span>
