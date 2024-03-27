@@ -20,8 +20,12 @@ const DESCRIPTION = "cv of sammy samkough";
     <meta property="og:site_name" content={TITLE} />
   </head>
   <body>
-    <main>
-      <slot />
-    </main>
+    <slot />
   </body>
 </html>
+
+<style is:global>
+  a {
+    color: blue;
+  }
+</style>

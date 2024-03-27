@@ -1,0 +1,21 @@
+{
+  "order": 0,
+  "company_name": "bonny systems",
+  "role_name": "engineer",
+  "time_worked": {
+    "start": {
+      "month": "january",
+      "year": 2024
+    }
+  },
+  "description": "founded a web development shop that specializes in building beautiful websites for local businesses. enhanced website performance and SEO by focusing on core web vitals (CWV), such as designing accessible websites, optimizing image performance, and utilizing the web standards.",
+  "technologies": [
+    "html",
+    "css",
+    "javascript",
+    "typescript",
+    "astro.js",
+    "django",
+    "postgresql"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "order": 4,
+  "company_name": "popstar",
+  "role_name": "software engineer",
+  "time_worked": {
+    "start": {
+      "month": "november",
+      "year": 2020
+    },
+    "end": {
+      "month": "april",
+      "year": 2022
+    }
+  },
+  "description": "built an iOS app that allowed users to buy products featured in bite-sized vertical videos using swift and firebase. incorporated social features such as creating and sharing videos, commenting on videos, and push notifications. implemented slick UI using custom collection views akin to TikTok's scroll view.",
+  "technologies": ["swift", "firebase"]
+}

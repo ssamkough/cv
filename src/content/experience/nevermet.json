@@ -1,0 +1,23 @@
+{
+  "order": 2,
+  "company_name": "nevermet",
+  "role_name": "software engineer",
+  "time_worked": {
+    "start": {
+      "month": "october",
+      "year": 2021
+    },
+    "end": {
+      "month": "april",
+      "year": 2022
+    }
+  },
+  "description": "launched a cross-platform VR dating mobile app utilizing react native and typescript. charted out a roadmap with story points for each MVP feature within a 3 month deadline to publish the app. the app is now live on the app store with over 500+ reviews and a 4.5+ rating.",
+  "technologies": [
+    "typescript",
+    "react native",
+    "node.js",
+    "express.js",
+    "postgresql"
+  ]
+}

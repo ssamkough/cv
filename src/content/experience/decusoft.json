@@ -1,0 +1,17 @@
+{
+  "order": 5,
+  "company_name": "decusoft",
+  "role_name": "software developer",
+  "time_worked": {
+    "start": {
+      "month": "may",
+      "year": 2019
+    },
+    "end": {
+      "month": "october",
+      "year": 2020
+    }
+  },
+  "description": "developed several top requested features such as filtering and sorting on the main table interface using javascript, C# and SQL. enhanced complex SQL queries which increased the load time performance of the main table interface by 50%.",
+  "technologies": ["knockout.js", "c#", "sql server"]
+}
