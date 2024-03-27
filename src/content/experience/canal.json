@@ -1,0 +1,26 @@
+{
+  "company_name": "canal",
+  "role_name": "software engineer",
+  "time_worked": {
+    "start": {
+      "month": "may",
+      "year": 2021
+    },
+    "end": {
+      "month": "july",
+      "year": 2023
+    }
+  },
+  "description": "joined as the 5th employee, now we're at 50 employees. influenced early architecture and cultural decisions such as the UI and codebase. created and own many key pages such as discover, settings, and onboarding.",
+  "technologies": [
+    "html",
+    "css",
+    "javascript",
+    "typescript",
+    "react",
+    "next.js",
+    "django",
+    "graphql",
+    "postgresql"
+  ]
+}

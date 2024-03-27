@@ -1,9 +1,17 @@
 {
-    "scripts": {
-        "dev": "yarn parcel src/cv.html"
-    },
-    "devDependencies": {
-        "parcel": "^2.7.0",
-        "prettier": "2.7.1"
-    }
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.5.10",
+    "@astrojs/check": "^0.5.10",
+    "typescript": "^5.4.3"
+  }
 }
