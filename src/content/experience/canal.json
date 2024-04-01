@@ -21,6 +21,7 @@
     "typescript",
     "react",
     "next.js",
+    "storybook",
     "django",
     "graphql",
     "postgresql"
