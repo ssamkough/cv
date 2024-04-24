@@ -5,11 +5,15 @@
   "website_url": "https://bonny.systems",
   "time_worked": {
     "start": {
-      "month": "january",
+      "month": "jan",
       "year": 2024
     }
   },
   "description": "founded a web development shop that specializes in building beautiful websites for local businesses. enhanced website performance and SEO by focusing on core web vitals (CWV), such as designing accessible websites, optimizing image performance, and utilizing the web standards.",
+  "descriptive_points": [
+    "founded a web development shop that specializes in building beautiful websites",
+    "enhanced website performance and SEO by focusing on core web vitals (CWV)"
+  ],
   "technologies": [
     "html",
     "css",

@@ -32,31 +32,31 @@ const experienceCollection = (await getCollection("experience"))
 <Layout>
   <div class="container">
     <header>
-      <h1>sammy samkough</h1>
-      <div style="display: flex; gap: 8px">
-        {
-          LINKS.map(({ title, url }, index) => (
-            <>
-              <a href={url}>{title}</a>
-              {index < LINKS.length - 1 ? " | " : ""}
-            </>
-          ))
-        }
+      <div
+        style="display: flex; justify-content: space-between; align-items: center; gap: 4px; flex-wrap: wrap; padding-bottom: 4px;"
+      >
+        <h1>sammy samkough</h1>
+        <div style="display: flex; gap: 8px">
+          {
+            LINKS.map(({ title, url }, index) => (
+              <>
+                <a href={url}>{title}</a>
+                {index < LINKS.length - 1 ? " | " : ""}
+              </>
+            ))
+          }
+        </div>
+      </div>
+      <div>
+        <span>{EDUCATION.name}</span> |
+        <span>{EDUCATION.degree}</span> |
+        <span>{EDUCATION.major}</span> |
+        <span>{EDUCATION.years}</span>
       </div>
     </header>
     <hr />
     <main>
       <section>
-        <h2>education</h2>
-        <div>
-          <span>{EDUCATION.name}</span> |
-          <span>{EDUCATION.degree}</span> |
-          <span>{EDUCATION.major}</span> |
-          <span>{EDUCATION.years}</span>
-        </div>
-      </section>
-      <section>
-        <h2>career</h2>
         <div style="display: flex; flex-direction: column; gap: 12px">
           {
             experienceCollection.map(
@@ -65,7 +65,7 @@ const experienceCollection = (await getCollection("experience"))
                 role_name,
                 time_worked,
                 website_url,
-                description,
+                descriptive_points,
                 technologies,
               }) => (
                 <article>
@@ -100,7 +100,13 @@ const experienceCollection = (await getCollection("experience"))
                       )}
                     </address>
                   </header>
-                  <p>{description}</p>
+                  {descriptive_points && (
+                    <ul>
+                      {descriptive_points.map((point) => (
+                        <li>{point}</li>
+                      ))}
+                    </ul>
+                  )}
                   <footer>
                     <span>
                       <strong>technologies</strong>:
@@ -135,5 +141,11 @@ const experienceCollection = (await getCollection("experience"))
   }
   h2 {
     font-size: 1.2em;
+  }
+  ul {
+    padding: 8px;
+  }
+  ul li {
+    margin-left: 14px;
   }
 </style>

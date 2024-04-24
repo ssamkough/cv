@@ -5,14 +5,19 @@
   "role_name": "engineer",
   "time_worked": {
     "start": {
-      "month": "march",
+      "month": "mar",
       "year": 2017
     },
     "end": {
-      "month": "august",
+      "month": "aug",
       "year": 2018
     }
   },
   "description": "founded a consulting company that helped businesses with all things digital. this includes (but not limited to) website development, digital marketing (i.e. SEO, social media ads), mobile app development. projects included stunited, circassian education foundation, essential creative group.",
+  "descriptive_points": [
+    "founded a consulting company that helped businesses with all things digital",
+    "this includes (but not limited to) website development, digital marketing (i.e. SEO, social media ads), mobile app development",
+    "projects included stunited, circassian education foundation, essential creative group"
+  ],
   "technologies": ["html", "css", "javascript", "react native", "wordpress"]
 }
