@@ -12,7 +12,8 @@
   "description": "founded a web development shop that specializes in building beautiful websites for local businesses. enhanced website performance and SEO by focusing on core web vitals (CWV), such as designing accessible websites, optimizing image performance, and utilizing the web standards.",
   "descriptive_points": [
     "founded a web development shop that specializes in building beautiful websites",
-    "enhanced website performance and SEO by focusing on core web vitals (CWV)"
+    "built and designed new websites by collaborating with client on needs using either a CMS (i.e. wordpress, tinaCMS), SSG (i.e. astro.js, gatsby), or UI framework (i.e. next.js, sveltekit)",
+    "enhanced existing websites initial load over 50% by improving core web vitals"
   ],
   "technologies": [
     "html",

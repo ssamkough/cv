@@ -15,7 +15,7 @@
   "description": "built an iOS app that allowed users to buy products featured in bite-sized vertical videos using swift and firebase. incorporated social features such as creating and sharing videos, commenting on videos, and push notifications. implemented slick UI using custom collection views akin to TikTok's scroll view.",
   "descriptive_points": [
     "built an iOS app that allowed users to buy products featured in bite-sized vertical videos using swift and firebase",
-    "incorporated social features such as creating and sharing videos, commenting on videos, and push notifications",
+    "incorporated social features such as creating and sharing videos, commenting on videos, and push notifications using firebase cloud messaging",
     "implemented slick UI using custom collection views akin to TikTok's scroll view"
   ],
   "technologies": ["swift", "firebase"]

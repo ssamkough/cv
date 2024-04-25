@@ -57,7 +57,7 @@ const experienceCollection = (await getCollection("experience"))
     <hr />
     <main>
       <section>
-        <div style="display: flex; flex-direction: column; gap: 12px">
+        <div style="display: flex; flex-direction: column; gap: 4px">
           {
             experienceCollection.map(
               ({
@@ -69,8 +69,8 @@ const experienceCollection = (await getCollection("experience"))
                 technologies,
               }) => (
                 <article>
-                  <header style="display: flex; justify-content: space-between; gap: 4px; flex-wrap: wrap;">
-                    <span style="display: flex; gap: 4px;">
+                  <header style="display: flex; justify-content: space-between; gap: 2px; flex-wrap: wrap;">
+                    <span style="display: flex; gap: 2px;">
                       <strong>
                         {website_url ? (
                           <a
@@ -107,17 +107,6 @@ const experienceCollection = (await getCollection("experience"))
                       ))}
                     </ul>
                   )}
-                  <footer>
-                    <span>
-                      <strong>technologies</strong>:
-                    </span>{" "}
-                    <span>
-                      {technologies.map(
-                        (item, index) =>
-                          `${item}${index < technologies.length - 1 ? ", " : ""}`
-                      )}
-                    </span>
-                  </footer>
                 </article>
               )
             )
@@ -134,7 +123,7 @@ const experienceCollection = (await getCollection("experience"))
     max-width: 700px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 6px;
   }
   h1 {
     font-size: 1.4em;
@@ -143,7 +132,7 @@ const experienceCollection = (await getCollection("experience"))
     font-size: 1.2em;
   }
   ul {
-    padding: 8px;
+    padding: 4px;
   }
   ul li {
     margin-left: 14px;
