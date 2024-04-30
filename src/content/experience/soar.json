@@ -16,7 +16,7 @@
   "description": "lead the development of the web architecture across the company. created a web portal that allowed customers to access their private information (i.e. payment, email, etc.) using react, typescript, firebase, and express.js. developed system to track user behavior using segment analytics, as well as automated the documentation for the AR guide.",
   "descriptive_points": [
     "created a web portal that allowed customers to access their private information (i.e. payment, email, etc.) using react, typescript, firebase, and express.js",
-    "developed system to track user behavior using segment analytics, as well as automated the documentation for the AR guide"
+    "implemented segment analytics in web portal which allowed better understanding of areas to improve while maintaining user privacy"
   ],
   "technologies": ["typescript", "react", "next.js", "segment", "firebase"]
 }
