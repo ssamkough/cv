@@ -15,9 +15,9 @@
   },
   "description": "joined as the 5th employee, grew to over 50 employees. influenced early architecture and cultural decisions such as the UI and codebase. created and owned many key areas such as onboarding, discovery and settings.",
   "descriptive_points": [
-    "created and evolved onboarding process as user needs changed using react, next.js, typescript, xstate, django and graphql",
-    "introduced component testing of our design library using storybook and chromatic as the first frontend engineer",
-    "educated frontend team on web accessibility which resulted in real improvements to web app"
+    "created & evolved onboarding process as user needs changed using react, next.js, typescript, xstate, django and graphql",
+    "standardized component testing for our in-house design library (Panama UI) using storybook & chromatic which resulted in a decrease of component-specific bugs by over 70%",
+    "decreased UX bugs by 60% across all verticals of the web app after educating the frontend team on web accessibility"
   ],
   "technologies": [
     "html",

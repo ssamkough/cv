@@ -24,6 +24,7 @@ const experienceCollection = defineCollection({
     }),
     description: z.string().optional(),
     descriptive_points: z.array(z.string()).optional(),
+    extra_descriptive_points: z.array(z.string()).optional(),
     technologies: z.array(z.string()),
   }),
 });
