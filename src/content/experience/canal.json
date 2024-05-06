@@ -15,9 +15,10 @@
   },
   "description": "joined as the 5th employee, grew to over 50 employees. influenced early architecture and cultural decisions such as the UI and codebase. created and owned many key areas such as onboarding, discovery and settings.",
   "descriptive_points": [
-    "created & evolved onboarding process as user needs changed using react, next.js, typescript, xstate, django and graphql",
-    "standardized component testing for our in-house design library (Panama UI) using storybook & chromatic which resulted in a decrease of component-specific bugs by over 70%",
-    "decreased UX bugs by 60% across all verticals of the web app after educating the frontend team on web accessibility"
+    "collaborated with design team to create our own in-house design system that replaced the Shopify Polaris design system which led to an increase of development speed by over 60%.",
+    "enhanced web application usability across all departments by 60% through leading targeted accessibility training and guidelines for the development team.",
+    "led the standardization of UI component testing within the in-house design system, significantly reducing component-specific bugs by over 70% using Chromatic and Storybook.",
+    "developed and refined the onboarding process to adapt to evolving user needs, utilizing React, Next.js, TypeScript, XState, Django and GraphQL which lead to an overall 40% increase in user satisfaction."
   ],
   "technologies": [
     "html",

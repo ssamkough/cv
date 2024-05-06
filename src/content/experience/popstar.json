@@ -15,10 +15,12 @@
   },
   "description": "built an iOS app that allowed users to buy products featured in bite-sized vertical videos using swift and firebase. incorporated social features such as creating and sharing videos, commenting on videos, and push notifications. implemented slick UI using custom collection views akin to TikTok's scroll view.",
   "descriptive_points": [
-    "built an iOS app using swift and firebase that allowed users to buy products featured in TikTok-like vertical videos with a focus on smooth & elegant design",
-    "incorporated social features such as creating and sharing videos, commenting on videos, and push notifications using firebase cloud messaging"
+    "Developed a feature-rich iOS application using Swift and Firebase / NoSQL, which offered an elegant vertical video experience, including social interactions such as sharing and commenting on videos.",
+    "Integrated push notifications and leveraged Firebase cloud messaging to enhance user engagement and retention."
   ],
   "extra_descriptive_points": [
+    "built an iOS app using swift and firebase that allowed users to buy products featured in TikTok-like vertical videos with a focus on smooth & elegant design",
+    "incorporated social features such as creating and sharing videos, commenting on videos, and push notifications using firebase cloud messaging",
     "implemented slick UI using custom collection views akin to TikTok's scroll view"
   ],
   "technologies": ["swift", "firebase"]

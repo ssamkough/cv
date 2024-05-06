@@ -11,11 +11,12 @@
   },
   "description": "founded a web development shop that specializes in building beautiful websites for local businesses. enhanced website performance and SEO by focusing on core web vitals (CWV), such as designing accessible websites, optimizing image performance, and utilizing the web standards.",
   "descriptive_points": [
-    "built and designed new websites by collaborating with client on needs using either a CMS (i.e. wordpress, tinaCMS), SSG (i.e. astro.js, gatsby), or UI framework (i.e. next.js, sveltekit)",
-    "reduced initial load of websites over 80% by improving core web vitals such as designing accessible websites, optimizing image performance, and utilizing web standards"
+    "achieved over 80% reduction in website load times by improving core web vitals which includes minimizing JavaScript usage, image optimization, and adherence to web standards.",
+    "partnered with design agencies to build and deploy modern websites using content management systems (CMS) like WordPress or advanced frameworks such as Next.js and Astro.js"
   ],
   "extra_descriptive_points": [
-    "founded a web development shop that specializes in building beautiful websites"
+    "founded a web development shop that specializes in building beautiful websites",
+    "built and designed new websites by collaborating with client on needs using either a CMS (i.e. wordpress, tinaCMS), SSG (i.e. astro.js, gatsby), or UI framework (i.e. next.js, sveltekit)"
   ],
   "technologies": [
     "html",

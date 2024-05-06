@@ -15,11 +15,13 @@
   },
   "description": "launched a cross-platform VR dating mobile app utilizing react native and typescript. charted out a roadmap with story points for each MVP feature within a 3 month deadline to publish the app. the app is now live on the app store with over 500+ reviews and a 4.5+ rating.",
   "descriptive_points": [
-    "launched a cross-platform VR dating mobile app utilizing react native, typescript, and postgresql",
-    "converted codebase from javascript to typescript which resulted in better team cohesion leading to faster development cycles by over 50%",
-    "lead the deployment to the app store which has now 500+ reviews with a 4.5+ rating"
+    "Analyzed methods with team to figure out how to best engage with users based on research, user tests, and different UI techniques utilizing React Native.",
+    "Transformed the project's codebase from JavaScript to TypeScript, improving team collaboration and development efficiency by over 50%.",
+    "Spearheaded the development of a cross-platform social VR dating application using React Native, TypeScript, Node.js and PostgreSQL, enhancing user engagement."
   ],
   "extra_descriptive_points": [
+    "launched a cross-platform VR dating mobile app utilizing react native, typescript, and postgresql",
+    "lead the deployment to the app store which has now 500+ reviews with a 4.5+ rating",
     "charted out a roadmap with story points for each MVP feature within a 3 month deadline to publish the app"
   ],
   "technologies": [
