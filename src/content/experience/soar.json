@@ -1,5 +1,6 @@
 {
   "order": 3,
+  "shouldHide": true,
   "company_name": "soar",
   "role_name": "web developer",
   "website_url": "https://streamsoar.com",

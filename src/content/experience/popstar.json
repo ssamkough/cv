@@ -10,7 +10,7 @@
     },
     "end": {
       "month": "apr",
-      "year": 2022
+      "year": 2021
     }
   },
   "description": "built an iOS app that allowed users to buy products featured in bite-sized vertical videos using swift and firebase. incorporated social features such as creating and sharing videos, commenting on videos, and push notifications. implemented slick UI using custom collection views akin to TikTok's scroll view.",

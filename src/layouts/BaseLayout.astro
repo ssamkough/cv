@@ -1,0 +1,141 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+
+const LINKS = [
+  { title: "website", url: "https://sammy.pizza" },
+  { title: "(862) 239-0100", url: "tel:8622390100" },
+  { title: "sammysamkough@gmail.com", url: "mailto:sammysamkough@gmail.com" },
+];
+
+const EDUCATION = {
+  name: "montclair state university",
+  degree: "bachelor of science (b.s.)",
+  major: "computer science",
+  years: "2016 - 2019",
+};
+
+const { shouldHide } = Astro.props;
+
+const experienceCollection = (await getCollection("experience"))
+  .map(({ data }) => data)
+  .filter((item) => (shouldHide ? !item?.shouldHide : item))
+  .sort((a, b) => {
+    if (a.order < b.order) {
+      return -1;
+    }
+    if (a.order > b.order) {
+      return 1;
+    }
+    return 0;
+  });
+---
+
+<Layout>
+  <div class="container">
+    <header>
+      <div
+        style="display: flex; justify-content: space-between; align-items: center; gap: 4px; flex-wrap: wrap; padding-bottom: 4px;"
+      >
+        <h1>sammy samkough</h1>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+          {
+            LINKS.map(({ title, url }, index) => (
+              <>
+                <a href={url}>{title}</a>
+                {index < LINKS.length - 1 ? " | " : ""}
+              </>
+            ))
+          }
+        </div>
+      </div>
+      <div>
+        <span>{EDUCATION.name}</span> |
+        <span>{EDUCATION.degree}</span> |
+        <span>{EDUCATION.major}</span> |
+        <span>{EDUCATION.years}</span>
+      </div>
+    </header>
+    <hr />
+    <main>
+      <section>
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          {
+            experienceCollection.map(
+              ({
+                company_name,
+                role_name,
+                time_worked,
+                website_url,
+                descriptive_points,
+              }) => (
+                <article>
+                  <header style="display: flex; justify-content: space-between; gap: 2px; flex-wrap: wrap;">
+                    <span style="display: flex; gap: 2px;">
+                      <strong>
+                        {website_url ? (
+                          <a
+                            href={website_url}
+                            target="_blank"
+                            style="color: black"
+                          >
+                            {company_name}
+                          </a>
+                        ) : (
+                          company_name
+                        )}
+                      </strong>
+                      | <strong>{role_name}</strong>
+                    </span>
+                    <address>
+                      <span>
+                        {time_worked.start.month} {time_worked.start.year}
+                      </span>{" "}
+                      -{" "}
+                      {time_worked?.end ? (
+                        <span>
+                          {time_worked.end.month} {time_worked.end.year}
+                        </span>
+                      ) : (
+                        <span>present</span>
+                      )}
+                    </address>
+                  </header>
+                  {descriptive_points && (
+                    <ul>
+                      {descriptive_points.map((point) => (
+                        <li>{point.toLowerCase()}</li>
+                      ))}
+                    </ul>
+                  )}
+                </article>
+              )
+            )
+          }
+        </div>
+      </section>
+    </main>
+    <br />
+  </div>
+</Layout>
+
+<style>
+  .container {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  h1 {
+    font-size: 1.4em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  ul {
+    padding: 2px;
+  }
+  ul li {
+    margin-left: 14px;
+  }
+</style>
