@@ -6,11 +6,11 @@
   "time_worked": {
     "start": {
       "month": "oct",
-      "year": 2022
+      "year": 2021
     },
     "end": {
       "month": "apr",
-      "year": 2023
+      "year": 2022
     }
   },
   "description": "launched a cross-platform VR dating mobile app utilizing react native and typescript. charted out a roadmap with story points for each MVP feature within a 3 month deadline to publish the app. the app is now live on the app store with over 500+ reviews and a 4.5+ rating.",
