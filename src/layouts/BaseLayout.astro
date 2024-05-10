@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 
 const LINKS = [
   { title: "website", url: "https://sammy.pizza" },
+  { title: "github", url: "https://github.com/ssamkough" },
   { title: "(862) 239-0100", url: "tel:8622390100" },
   { title: "sammysamkough@gmail.com", url: "mailto:sammysamkough@gmail.com" },
 ];
@@ -38,7 +39,7 @@ const experienceCollection = (await getCollection("experience"))
         style="display: flex; justify-content: space-between; align-items: center; gap: 4px; flex-wrap: wrap; padding-bottom: 4px;"
       >
         <h1>sammy samkough</h1>
-        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+        <div style="display: flex; flex-wrap: wrap; gap: 6px">
           {
             LINKS.map(({ title, url }, index) => (
               <>
