@@ -1,0 +1,186 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "./Layout.astro";
+
+const experienceCollection = (await getCollection("experience"))
+  .map(({ data }) => data)
+  .filter((item) => !item?.shouldHide)
+  .sort((a, b) => {
+    if (a.order < b.order) {
+      return -1;
+    }
+    if (a.order > b.order) {
+      return 1;
+    }
+    return 0;
+  });
+
+const year = new Date().getFullYear();
+function monthAsInteger(monthAsString: string) {
+  return new Date(Date.parse(monthAsString + `1, ${year}`)).getMonth() + 1;
+}
+
+function capitalizedWord(word: string) {
+  return `${word.charAt(0).toUpperCase()}${word.substring(1, word.length)}`;
+}
+
+function capitalizedText(text: string) {
+  return text
+    .toLowerCase()
+    .split(" ")
+    .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+    .join(" ");
+}
+---
+
+<Layout>
+  <div class="container">
+    <header class="header">
+      <h1>Sammy Samkough</h1>
+      <h3>Software Engineer</h3>
+    </header>
+    <div class="main-block">
+      <aside>
+        <div class="aside-block">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="https://github.com/ssamkough">github</a></li>
+            <li><a href="https://linkedin.com/ssamkough">linkedin</a></li>
+            <li><a href="https://sammy.pizza">my website</a></li>
+            <li><a href="tel:8622390100">(862) 239-0100</a></li>
+            <li>
+              <a href="mailto:sammysamkough@gmail.com"
+                >sammysamkough@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="aside-block">
+          <h3>Education</h3>
+          <p>B.S, Computer Science 2019</p>
+          <p>Montclair State University (MSU)</p>
+        </div>
+        <div class="aside-block">
+          <h3>Software Languages</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React.js</li>
+            <li>Next.js</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>Python</li>
+            <li>Django</li>
+            <li>GraphQL</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+        <!-- <div class="aside-block">
+          <h3>Research</h3>
+          <h4>MSU Department of Computer Science</h4>
+          <em>Research Assistant, 01.2018 - 05.2019</em>
+          <p>
+            Researched deep learning techniques for anomaly detection, utilizing
+            a broad range of machine learning methods (SVM, Decision Trees,
+            Random Forest, Naive Bayes, KNN, ANN) to develop a model on
+            TensorFlow and Keras that effectively identified network intrusions
+            and improved detection accuracy for large enterprises.
+          </p>
+        </div> -->
+        <div class="aside-block">
+          <h3>Skills</h3>
+          <ul>
+            <li>Communication</li>
+            <li>Teamwork</li>
+            <li>Problem-solving</li>
+            <li>Multitasking</li>
+            <li>Attention to detail</li>
+          </ul>
+        </div>
+      </aside>
+      <main>
+        <h2>Experience</h2>
+        {
+          experienceCollection.map(
+            ({
+              company_name,
+              role_name,
+              time_worked: { start, end },
+              descriptive_points,
+            }) => (
+              <article class="experience-block">
+                <header>
+                  {capitalizedText(company_name)} | {capitalizedText(role_name)}{" "}
+                  | {`${monthAsInteger(start.month)}.${start.year}`} -{" "}
+                  {end ? `${monthAsInteger(end.month)}.${end.year}` : "Present"}
+                </header>
+                <ul>
+                  {descriptive_points &&
+                    descriptive_points.map((point) => (
+                      <li>{`${capitalizedWord(point)}.`}</li>
+                    ))}
+                </ul>
+              </article>
+            )
+          )
+        }
+      </main>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  :root {
+    --main-color: hotpink;
+  }
+  .container {
+    font-size: 0.9em;
+  }
+  aside {
+    max-width: 300px;
+    flex: fit-content;
+    padding: 20px;
+  }
+  aside ul {
+    list-style-type: none;
+  }
+  main {
+    padding: 20px 10px 20px 0px;
+  }
+  .header {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: var(--main-color);
+  }
+  .main-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .main-block main ul {
+    margin-left: 20px;
+  }
+  .main-block h1,
+  .main-block h2,
+  .main-block h3,
+  .main-block h4,
+  .main-block h5,
+  .main-block h6 {
+    color: var(--main-color);
+  }
+  .aside-block:not(:first-child) {
+    margin-top: 16px;
+  }
+  .experience-block:not(:first-child) {
+    margin-top: 8px;
+  }
+  .experience-block header {
+    font-size: 1.05em;
+  }
+  .container {
+  }
+</style>
