@@ -44,10 +44,16 @@ function capitalizedText(text: string) {
         <div class="aside-block">
           <h3>Contact</h3>
           <ul>
-            <li><a href="https://github.com/ssamkough">github</a></li>
-            <li><a href="https://linkedin.com/ssamkough">linkedin</a></li>
-            <li><a href="https://sammy.pizza">my website</a></li>
+            <li><a href="https://sammy.pizza">sammy.pizza</a></li>
             <li><a href="tel:8622390100">(862) 239-0100</a></li>
+            <li>
+              <a href="https://github.com/ssamkough">github.com/ssamkough</a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/ssamkough"
+                >linkedin/in/ssamkough</a
+              >
+            </li>
             <li>
               <a href="mailto:sammysamkough@gmail.com"
                 >sammysamkough@gmail.com</a
@@ -77,18 +83,6 @@ function capitalizedText(text: string) {
             <li>PostgreSQL</li>
           </ul>
         </div>
-        <!-- <div class="aside-block">
-          <h3>Research</h3>
-          <h4>MSU Department of Computer Science</h4>
-          <em>Research Assistant, 01.2018 - 05.2019</em>
-          <p>
-            Researched deep learning techniques for anomaly detection, utilizing
-            a broad range of machine learning methods (SVM, Decision Trees,
-            Random Forest, Naive Bayes, KNN, ANN) to develop a model on
-            TensorFlow and Keras that effectively identified network intrusions
-            and improved detection accuracy for large enterprises.
-          </p>
-        </div> -->
         <div class="aside-block">
           <h3>Skills</h3>
           <ul>
@@ -112,8 +106,9 @@ function capitalizedText(text: string) {
             }) => (
               <article class="experience-block">
                 <header>
-                  {capitalizedText(company_name)} | {capitalizedText(role_name)}{" "}
-                  | {`${monthAsInteger(start.month)}.${start.year}`} -{" "}
+                  <strong>{capitalizedText(company_name)}</strong> |{" "}
+                  <em>{capitalizedText(role_name)}</em> |{" "}
+                  {`${monthAsInteger(start.month)}.${start.year}`} -{" "}
                   {end ? `${monthAsInteger(end.month)}.${end.year}` : "Present"}
                 </header>
                 <ul>
@@ -134,10 +129,14 @@ function capitalizedText(text: string) {
 <style>
   :root {
     --main-color: hotpink;
+    --secondary-color: darkgreen;
   }
   .container {
     max-width: 820px;
     font-size: 0.9em;
+  }
+  a {
+    color: var(--secondary-color);
   }
   aside {
     max-width: 300px;
@@ -181,6 +180,9 @@ function capitalizedText(text: string) {
   }
   .experience-block header {
     font-size: 1.05em;
-    font-weight: 600;
+  }
+  .experience-block header strong,
+  .experience-block header em {
+    font-size: 1.1em;
   }
 </style>
