@@ -1,0 +1,15 @@
+{
+  "order": 0,
+  "company_name": "phia",
+  "role_name": "founding engineer",
+  "website_url": "https://phia.com",
+  "time_worked": {
+    "start": {
+      "month": "oct",
+      "year": 2024
+    }
+  },
+  "description": "",
+  "descriptive_points": ["n/a"],
+  "technologies": ["html", "css", "javascript", "typescript", "swift"]
+}

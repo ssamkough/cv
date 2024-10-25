@@ -1,8 +1,8 @@
 {
-  "order": 6,
+  "order": 7,
   "shouldHide": true,
   "company_name": "dot LLC",
-  "role_name": "engineer",
+  "role_name": "co-founder / founding engineer",
   "time_worked": {
     "start": {
       "month": "mar",

@@ -105,7 +105,7 @@ const experienceCollection = (await getCollection("experience"))
                   </header>
                   {descriptive_points && (
                     <ul>
-                      {descriptive_points.map((point) => (
+                      {descriptive_points.map((point: string) => (
                         <li>{point.toLowerCase()}</li>
                       ))}
                     </ul>
